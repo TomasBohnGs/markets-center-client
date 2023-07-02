@@ -13,7 +13,7 @@ export default function Ventas (){
     const {currentUser} = useAuth()
     useEffect(() => {
         dispatch(allOrders(currentUser))
-    }, [dispatch])
+    }, [dispatch, currentUser])
     return (
         <div className={styles.container}>
             <Grafico history={history}/>

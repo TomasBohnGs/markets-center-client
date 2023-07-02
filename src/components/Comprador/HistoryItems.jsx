@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Container, Avatar, IconButton, Typography } from "@mui/material";
-import { ShoppingBasket, ExpandMore, Info } from "@mui/icons-material";
+import { ShoppingBasket, Info } from "@mui/icons-material";
 //import InfoIcon from '@mui/icons-material/Info';
 import style from './Style/HistoryItems.module.css'
 

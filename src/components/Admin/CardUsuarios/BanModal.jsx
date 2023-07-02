@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { Modal, Typography, TextField, Box, Button, styled } from "@mui/material";
-import { AddAPhoto, Publish } from '@mui/icons-material/';
+import { Publish } from '@mui/icons-material/';
 
 
 const Input = styled('input')({

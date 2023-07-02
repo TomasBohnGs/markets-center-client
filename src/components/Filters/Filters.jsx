@@ -16,7 +16,6 @@ export default function Filters({ home, admin, value, setValue }) {
   //const [value2, setValue2] = useState('one');
   const dispatch = useDispatch()
   const [anchorEl, setAnchorEl] = useState(null);
-  const [categories, setCategories] = useState('');
   const [selected, setSelected] = useState(0)
   const allCategories = useSelector(state => state.allCategories)
   const open = Boolean(anchorEl);

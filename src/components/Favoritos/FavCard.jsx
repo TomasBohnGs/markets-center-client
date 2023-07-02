@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ListItemIcon, ListItem, ListItemAvatar, Avatar, ListItemText, Typography, Divider, Button, Box, Modal, Dialog } from '@mui/material';
+import { ListItemIcon, ListItem, ListItemAvatar, Avatar, ListItemText, Typography, Divider, Button, Box, Modal } from '@mui/material';
 import Style from './FavCard.module.css';
 import Favorite from '@mui/icons-material/Favorite';
 import MoreHoriz from '@mui/icons-material/MoreHoriz';

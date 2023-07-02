@@ -83,23 +83,3 @@ export function ordersBySeller(id, currentUser) {
         }
     }
 }
-
-// export function productBySeller(id, currentUser) {
-//     console.log(id, currentUser)
-//     const token = currentUser.auth.currentUser.accessToken
-//     return async function (dispatch) {
-//         try {
-//             dispatch({type: LOADING_ON})
-//             const orders = await axios.get(`/api/private/productSeller/${id}`, {
-//                 headers:{
-//                     Authorization: `Bearer ${token}`
-//                   }
-//             });
-//             dispatch({type: MESSAGE, payload: orders.data.msg})
-//             dispatch({type: GET_ALL_ORDERS_OF_SELLER, payload: orders.data.data})
-//             dispatch({type: LOADING_OFF});
-//         } catch (err) {
-//             dispatch({type: ERRORS, payload: err.msg})
-//         }
-//     }
-// }

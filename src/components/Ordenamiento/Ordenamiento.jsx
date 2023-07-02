@@ -86,7 +86,6 @@ function Ordenamiento() {
           dispatch(idActiveSeller())
         }
       };
-      console.log('eeee =>',categoria)
 
     const handleChangeRadio = (event) => {
       setRadio(event.target.value);

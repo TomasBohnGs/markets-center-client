@@ -38,7 +38,6 @@ export default function HistoryHome(){
     }, [dispatch, oneUser._id, currentUser])
 
     async function handleDespachar(id) {
-        console.log(id)
         await dispatch(updateDispatches({idOrder:id, idUser: currentUser.uid}, currentUser))
         setAlerta('Pedido listo para despachar')
         dispatch(setAlert('Pedido listo para despachar'))

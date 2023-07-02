@@ -14,7 +14,6 @@ function ComponenteGraciasSub() {
     const dispatch = useDispatch();
     const newOrder = useSelector(state=> state.newOrder)
     useEffect(()=>{
-        console.log(newOrder)
         dispatch(UpdateOrder(newOrder, "Aprobada", currentUser))
         // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])

@@ -10,7 +10,6 @@ import logo from '../../images/MarketsCenter.png'
 import MoreHoriz from "@mui/icons-material/MoreHoriz";
 import Detail from '../Card/Detail/Detail'
 import style from './Style/HistoryItems.module.css'
-import Loading from '../Loading/Loading'
 import { SnackbarAlert } from "../Alert/success";
 import { Snackbar } from "@material-ui/core";
 import { delAlert } from "../../redux/actions/a.alert";
@@ -18,7 +17,6 @@ import { delAlert } from "../../redux/actions/a.alert";
 function UserProfile() {
   const dispatch = useDispatch();
   const history = useSelector((state) => state.history);
-  const loading = useSelector((state) => state.loading);
   const alert = useSelector(state => state.alert)
   const { oneUser, currentUser } = useAuth();
   const [openMore, setOpenMore] = useState(false);

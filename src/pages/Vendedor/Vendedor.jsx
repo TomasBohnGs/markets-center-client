@@ -1,14 +1,13 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
-import { useDispatch, useSelector, shallowEqual } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import {useNavigate} from 'react-router-dom'
 import { GetAllProductsOfSeller, deleteProduct, disableProduct, enableProduct } from '../../redux/actions/a.products.js';
 import {delAlert} from '../../redux/actions/a.alert'
-import { updateProduct, postProduct, productBySeller } from '../../redux/actions/a.seller.js'
+import { updateProduct, postProduct } from '../../redux/actions/a.seller.js'
 import spinner from '../../spinner.gif'
 import style from './Vendedor.module.css'
 
-// import { postProduct } from '../../../redux/actions/a.seller.js'
 
 import { useAuth } from '../../context/AuthContext'
 
@@ -16,7 +15,6 @@ import NavBar from '../../components/NavBar/NavBar'
 import DatosVendedor from '../../components/Vendedor/DatosVendedor/DatosVendedor'
 import CardVendedor from '../../components/Vendedor/CardVendedor/CardVendedor'
 import AddProduct from '../../components/Vendedor/AddProduct/AddProduct.jsx'
-// import HistoryHome from '../../components/Vendedor/HistorialVentas/HistoryHome.jsx'
 import { Container, Typography, Button, Box, Snackbar} from '@mui/material'
 import {SnackbarAlert} from '../../components/Alert/success';
 
