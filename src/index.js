@@ -11,7 +11,7 @@ import { theme } from './ThemeConfig';
 
 import axios from 'axios'
 
-axios.defaults.baseURL = "https://markets-center-api.up.railway.app" || process.env.REACT_APP_API;
+axios.defaults.baseURL = "https://marketscenter-api.onrender.com" || process.env.REACT_APP_API;
 
 ReactDOM.render(
   <React.StrictMode>
